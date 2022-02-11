@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Malzeme Ekleme</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="close()">Kapat</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-textarea
+    [(ngModel)]="input"
+    style="
+      margin-left: 30px;
+      margin-top: 50px;
+      width: 350px;
+      border: 4px dotted #0059ff7c;
+      border-radius: 8px;
+      height: 100px;
+      background-color: rgba(31, 8, 180, 0.11);
+    "
+    placeholder="Eklemek istediginiz malzemeyi buraya yazip ardindan +Ekle tusuna basiniz..."
+  >
+  </ion-textarea>
+
+  <ion-button
+    (click)="send()"
+    style="margin-left: 150px"
+    shape="round"
+    fill="outline"
+    color="primary"
+    ><ion-icon slot="start" name="add"></ion-icon> Ekle</ion-button
+  >
+</ion-content>
