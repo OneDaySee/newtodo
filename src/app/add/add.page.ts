@@ -15,7 +15,7 @@ import {
 export class AddPage implements OnInit {
   public name: any;
   public input: any;
-  public url: any = 'http://microwebservice.net/ecodation/17temmuz/onder/';
+  public url: any = '';
   public malzemedata: any;
 
   constructor(
