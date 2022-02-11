@@ -20,7 +20,7 @@ export class FolderPage implements OnInit {
   public yazi: any;
   userData: any;
   id: string;
-  public url: any = 'http://microwebservice.net/ecodation/17temmuz/onder/';
+  public url: any = '';
   public malzemedata: any;
   importmalzeme: any;
   public input: any;
