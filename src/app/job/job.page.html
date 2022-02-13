@@ -1,0 +1,71 @@
+<ion-app style="background-color: lightgrey">
+  <div style="margin: auto; text-align: center;" >
+    <ion-avatar style="margin: auto; margin-top: 10px;" (click)="profile()" >
+      <img src="{{userData.avatar}}" />
+    </ion-avatar>
+    <ion-label >Hoş Geldin <br /> {{userData.ad_soyad | titlecase }}</ion-label>
+  </div>
+
+
+
+
+  <ion-content >
+    <ion-header >
+      <ion-toolbar >
+        <ion-title >Yapilacaklar!</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    
+    <!-- <ion-list>
+      <ion-item lines="full">
+        <ion-icon slot="start" name="moon"></ion-icon>
+        <ion-label>
+          Toggle Dark Theme
+        </ion-label>
+        <ion-toggle id="themeToggle" slot="end"></ion-toggle>
+      </ion-item>
+    </ion-list> -->
+
+
+
+    <!-- <ion-card   > -->
+      <ion-list  *ngFor="let malzemeler of importmalzeme" >
+        <!-- <ion-item-sliding> -->
+          <ion-item    [routerLink]="['/jobdetail',malzemeler]" routerLinkActive="router-link-active"   >
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label class="abc"  >{{malzemeler.malzeme}} + {{malzemeler.id}}</ion-label>
+            <ion-badge color="success" slot="end">{{malzemeler.tarih}}  </ion-badge>
+            <ion-icon name="arrow-back-outline" slot="end" color="danger"></ion-icon>
+          </ion-item>
+          <ion-item-options side="start">
+            <ion-item-option>
+              <ion-icon slot="icon-only" name="heart"></ion-icon>
+            </ion-item-option>
+          </ion-item-options>
+          <ion-item-options side="end" >
+            <ion-item-option color="danger">
+              <ion-icon slot="icon-only" name="trash" (click)="delete1()"></ion-icon>
+            </ion-item-option>
+          </ion-item-options>
+        <!-- </ion-item-sliding> -->
+      </ion-list>
+    <!-- </ion-card> -->
+
+kullanici_id:{{userData.id}}
+
+
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Tamamlananlar!</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button (click)="newjob()">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </ion-content>
+</ion-app>
+slidi

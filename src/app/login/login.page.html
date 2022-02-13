@@ -1,0 +1,80 @@
+<ion-buttons slot="start">
+  <ion-back-button (click)="back()" text="Geri" color="light"></ion-back-button>
+</ion-buttons>
+
+<ion-content [fullscreen]="true" class="back">
+  <img
+    class="animate__animated animate__fadeIn"
+    style="
+      max-width: 60%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5%;
+    "
+    src="\assets\todo_icon.png"
+    alt="asd"
+  />
+
+  <ion-item
+    class="animate__animated animate__fadeIn"
+    style="
+      margin-top: 10%;
+      border-radius: 8px;
+      font-size: 13pt;
+      margin-inline: 50px;
+      text-align: center;
+      box-shadow: 5px 5px 5px rgba(58, 58, 58, 0.4);
+      width: 13.7rem;
+      height: 2.5rem;
+      margin-left: 20%;
+    "
+  >
+    <ion-label position="stacked"
+      >E-Mail<ion-text color="danger">*</ion-text></ion-label
+    >
+    <ion-input [(ngModel)]="email" inputmode="email"></ion-input>
+  </ion-item>
+
+  <ion-item
+    class="animate__animated animate__fadeIn"
+    style="
+      margin-top: 10px;
+      border-radius: 8px;
+      font-size: 13pt;
+      margin-inline: 50px;
+      text-align: center;
+      box-shadow: 5px 5px 5px rgba(58, 58, 58, 0.4);
+      width: 13.7rem;
+      height: 2.5rem;
+      margin-left: 20%;
+    "
+  >
+    <ion-label position="stacked">
+      Sifre <ion-text color="danger">*</ion-text>
+    </ion-label>
+    <ion-input
+      [(ngModel)]="password"
+      type="password"
+      inputmode="password"
+    ></ion-input>
+  </ion-item>
+
+  <ion-button
+    (click)="login1()"
+    [disabled]="!email || password?.length<4"
+    class="animate__animated animate__fadeIn, ion-activatable ripple-parent"
+    color="#22A45D"
+    style="
+      margin-left: 50px;
+      margin-block-start: 10px;
+      width: 220px;
+      background-color: #22a45d;
+      border-radius: 8px;
+      margin-left: 20%;
+    "
+  >
+    <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+    Giriş
+  </ion-button>
+</ion-content>

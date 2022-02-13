@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    
+    <ion-title>Yeni "ToDo" ekleyebilirsiniz.</ion-title>
+    <ion-icon name="close-circle" size="large" slot="end" (click)="close()"></ion-icon>
+  </ion-toolbar>
+
+  
+</ion-header>
+
+<ion-content>
+
+<ion-card>
+    <ion-item color="medium">
+    <ion-label position="floating">ToDo Ekleyin.</ion-label>
+    <ion-input [(ngModel)]="input" type="text" ></ion-input>
+  </ion-item>
+</ion-card>
+
+
+  <ion-item >
+    <ion-icon name="calendar-outline" ></ion-icon>
+    <ion-datetime placeholder="Bitis Tarihi" slot="end" value="1990-02-19" [(ngModel)]="date" cancelText="Iptal" doneText="Tamam"></ion-datetime>
+  </ion-item>
+
+
+  <ion-item >
+    <ion-icon name="alarm-outline"></ion-icon>
+    <ion-datetime placeholder="Bitis Tarihi" slot="end" display-format="h:mm A" picker-format="h:mm A" value="1990-02-19T07:43Z" [(ngModel)]="watch" cancelText="Iptal" doneText="Tamam"></ion-datetime>
+  </ion-item>
+
+  <ion-list>
+    <ion-item >
+      <ion-icon name="person-outline"> </ion-icon>
+      <ion-select [(ngModel)]="personal" slot="end" placeholder="Personel Secin.">
+        <ion-select-option value="f">Female</ion-select-option>
+        <ion-select-option value="m">Male</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+  </ion-list>
+
+  <ion-button expand="block" (click)="send1()">Ekle</ion-button>
+
+</ion-content>

@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar class="back">
+    <ion-title color="light">Profile</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button
+        defaultHref="job"
+        color="light"
+        text="Geri"
+      ></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="back">
+  <ion-avatar class="item-avatar">
+    <img src="{{userData.avatar}}" />
+  </ion-avatar>
+  <div style="text-align: center">
+    <ion-label
+      position="floating"
+      class="ion-text-wrap"
+      style="font-size: x-large"
+      color="dark"
+      >{{userData.ad_soyad | titlecase }}</ion-label
+    >
+  </div>
+
+  <ion-button
+    (click)="exit()"
+    class="animate__animated animate__fadeIn, button1"
+    color="#22A45D"
+    style="
+    margin: auto;
+    top: 50%;
+  left: 20%;"
+  >
+    Cikis.
+  </ion-button>
+</ion-content>

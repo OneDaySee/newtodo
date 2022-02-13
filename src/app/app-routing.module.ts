@@ -12,8 +12,32 @@ const routes: Routes = [
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
   },
   {
-    path: 'add/:name',
-    loadChildren: () => import('./add/add.module').then( m => m.AddPageModule)
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'newjob',
+    loadChildren: () => import('./newjob/newjob.module').then( m => m.NewjobPageModule)
+  },
+  {
+    path: 'jobdetail/:mal',
+    loadChildren: () => import('./jobdetail/jobdetail.module').then( m => m.JobdetailPageModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'password',
+    loadChildren: () => import('./password/password.module').then( m => m.PasswordPageModule)
+  },
+  {
+    path: 'job',
+    loadChildren: () => import('./job/job.module').then( m => m.JobPageModule)
   }
 ];
 

@@ -24,3 +24,68 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css);
+
+
+.input1{
+    border: 2px solid; margin: 50px; border-radius: 8px;
+
+
+}
+
+.button1{
+
+
+
+
+/* button2 */
+
+
+position:absolute;
+width: 285px;
+height: 51px;
+left: 0px;
+top: 0px;
+
+background: #FFFFFF;
+mix-blend-mode: normal;
+box-shadow: 0px 4px 4px rgba(243, 62, 62, 0.25), 0px 4px 4px rgba(60, 255, 1, 0.25);
+border-radius: 20px;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 10px 0px;
+
+
+}
+
+.maincolor{
+background: black;
+}
+
+.back{
+--background: linear-gradient(160deg, #0093E9 0%, #80D0C7 50%);
+
+
+}
+
+.anime{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
