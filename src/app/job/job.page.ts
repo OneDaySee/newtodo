@@ -15,7 +15,7 @@ import { NewjobPage } from '../newjob/newjob.page';
   styleUrls: ['./job.page.scss'],
 })
 export class JobPage implements OnInit {
-  public url: any = 'http://microwebservice.net/ecodation/17temmuz/onder/';
+  public url: any = '';
   userData: any;
   newjobdata: any;
   importmalzeme: any;

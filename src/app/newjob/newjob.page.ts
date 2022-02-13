@@ -17,7 +17,7 @@ export class NewjobPage implements OnInit {
   date: any;
   watch: any;
   personal: any;
-  public url: any = 'http://microwebservice.net/ecodation/17temmuz/onder/';
+  public url: any = '';
   add: any;
 
   constructor(

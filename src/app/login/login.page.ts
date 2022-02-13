@@ -9,7 +9,7 @@ import { ToastController, AlertController } from '@ionic/angular';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-  public url: any = 'http://microwebservice.net/ecodation/17temmuz/onder/';
+  public url: any = '';
   loginPage: any;
   email: any;
   password: any;

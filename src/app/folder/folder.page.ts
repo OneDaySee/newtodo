@@ -16,7 +16,7 @@ export class FolderPage implements OnInit {
   public inputname: string;
   public inputemail: string;
   public inputpassword: string;
-  public url: any = 'http://microwebservice.net/ecodation/17temmuz/onder/';
+  public url: any = '';
   
 
   constructor(
